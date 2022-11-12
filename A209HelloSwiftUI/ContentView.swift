@@ -9,20 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
 
-    
-    
+    var emojis = ["🚲", "🚂", "🚁", "🚜", "🚕", "🏎", "🚑", "🚓", "🚒", "✈️", "🚀", "⛵️", "🛸", "🛶", "🚌", "🏍", "🛺", "🚠", "🛵", "🚗", "🚚", "🚇", "🛻", "🚝"]
+
     @State var emojiCount = 5
     var body: some View {
         VStack{
-            CardView()
+            
+            
+            CardView(content: "M")
+                .aspectRatio(2/3, contentMode: .fit)
+            
+            
+            
             HStack{
                 remove
                 Spacer()
                 add
             }
             .font(.largeTitle)
-            .padding(.horizontal, 30)
-        }
+            .padding(.horizontal, 20)
+        }.padding(10)
     }
     
     

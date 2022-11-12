@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CardView: View {
     
-    var icon = "H"
+    var content:String
     
     @State var isFaceUp = true
     
@@ -19,13 +19,10 @@ struct CardView: View {
             if isFaceUp{
                 shape.fill().foregroundColor(.white)
                 shape.strokeBorder(lineWidth: 3)
-                Text(icon)
+                Text(content)
             }else{
                 shape.fill()
             }
-            
-            
-            
         }.onTapGesture {
             isFaceUp = !isFaceUp
             print(isFaceUp)
@@ -53,6 +50,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+        CardView(content: "Preview")
     }
 }
