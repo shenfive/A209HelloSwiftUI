@@ -15,11 +15,11 @@ struct CardView: View {
     
     var body: some View {
         ZStack{
-            let shape = RoundedRectangle(cornerRadius: 20)
+            let shape = RoundedRectangle(cornerRadius: 15)
             if isFaceUp{
                 shape.fill().foregroundColor(.white)
                 shape.strokeBorder(lineWidth: 3)
-                Text(content)
+                Text(content).font(.largeTitle)
             }else{
                 shape.fill()
             }

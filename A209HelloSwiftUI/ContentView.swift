@@ -11,15 +11,17 @@ struct ContentView: View {
 
     var emojis = ["🚲", "🚂", "🚁", "🚜", "🚕", "🏎", "🚑", "🚓", "🚒", "✈️", "🚀", "⛵️", "🛸", "🛶", "🚌", "🏍", "🛺", "🚠", "🛵", "🚗", "🚚", "🚇", "🛻", "🚝"]
 
-    @State var emojiCount = 5
+    @State var emojiCount = 20
     var body: some View {
         VStack{
-            
-            
-            CardView(content: "M")
-                .aspectRatio(2/3, contentMode: .fit)
-            
-            
+            ScrollView{
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 65))]) {
+                    ForEach(emojis[0..<emojiCount], id: \.self) { emoji in
+                        CardView(content: emoji)
+                            .aspectRatio(2/3, contentMode: .fit)
+                    }
+                }
+            }
             
             HStack{
                 remove
