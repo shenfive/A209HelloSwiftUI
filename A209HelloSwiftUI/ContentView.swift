@@ -14,12 +14,14 @@ struct ContentView: View {
     @State var emojiCount = 5
     var body: some View {
         VStack{
-            Spacer()
+            CardView()
             HStack{
                 remove
                 Spacer()
                 add
             }
+            .font(.largeTitle)
+            .padding(.horizontal, 30)
         }
     }
     
