@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA796FDB291A5D4C009CBF96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BA9A1B98291660AA004EBD72 /* A209HelloSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A209HelloSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9A1B9B291660AA004EBD72 /* A209HelloSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A209HelloSwiftUIApp.swift; sourceTree = "<group>"; };
 		BA9A1B9D291660AA004EBD72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		BA9A1B9A291660AA004EBD72 /* A209HelloSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				BA796FDB291A5D4C009CBF96 /* Info.plist */,
 				BA9A1B9B291660AA004EBD72 /* A209HelloSwiftUIApp.swift */,
 				BA9A1B9D291660AA004EBD72 /* ContentView.swift */,
 				BA9A1B9F291660AB004EBD72 /* Assets.xcassets */,
@@ -270,6 +272,7 @@
 				DEVELOPMENT_TEAM = XSVW22JPST;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = A209HelloSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +302,7 @@
 				DEVELOPMENT_TEAM = XSVW22JPST;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = A209HelloSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
